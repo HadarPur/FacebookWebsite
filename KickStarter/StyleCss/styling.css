@@ -1,0 +1,913 @@
+#mainPageBody {  
+    padding: 0px;
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+body {
+    margin: 0px;
+}
+
+div.photobook {
+    width:50%; /*width of your image*/
+    height:100%; /*height of your image*/
+    background-image:url('/pics/facephoto.jpg');
+    background-repeat: no-repeat;
+    float: left;
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+ }
+ 
+.button{
+    border-radius: 7px;
+    font-style: italic;
+    padding: 5px;
+    font-size: small;
+    border-style: hidden;
+    font-weight: 600;
+    color: #2b2b63;
+    background: linear-gradient(#ffcc80 5%, #ff9900 100%);
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover{
+    background: linear-gradient(#ff9900 5%, #ffcc80 100%);
+}
+
+.loginTextBoxes{
+	padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#loginBtn
+{
+	margin-left: 10px;
+    margin-right: 2px;
+}
+
+.mainHeader {
+    position: relative;
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+	background-color: #2b2b63;
+    border-bottom: 5px solid black;
+}
+
+.logoName {
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+    max-width: 150px;
+}
+
+.loginDisp .loginForm{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .loginDisp .loggedInUser {
+    display: none;
+}
+
+.loggedInDisp .loginForm{
+    display: none;
+}
+
+.loggedInDisp .loggedInUser{
+    display: flex;
+} */
+
+
+
+
+.loggedInUser{
+    color: white;
+    right: 8px;
+    top: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: sans-serif;
+    display: flex;
+    order: 1;
+    margin: 0 10px;
+
+}
+
+#loginForm{
+	margin: 0px;
+}
+
+#logo {
+    border-radius: 10px;
+    display: inline;
+    font-style: italic;
+    font-weight: bold;
+    padding: 15px 15px;
+    color: #2b2b63;
+    align-items: center;
+    background-color: #ff9900;
+    letter-spacing: 2px;
+}
+
+#logo img{
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+
+}
+
+.loginDisp {
+	/* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-right: 20px;
+
+}
+
+.loginErrorMsg {
+	display: none;
+	float: left;
+	height: 0px;
+	color: red;
+	bottom: -3px;
+    font-size: 15px;
+    position: relative;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.logOut {
+    display: flex;
+    order: 2;
+    right: 20px;
+    bottom: 0px;
+    color: white;
+}
+
+/*
+########################################################################
+Register page
+########################################################################
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+#regBody {
+    align-items: center;
+    align-self: center;
+}
+
+h2{
+text-align: center;
+font-size: 24px;
+color: white;
+}
+
+hr{
+margin-bottom: 30px;
+}
+
+div.container{
+height: 50%;
+margin:80px;
+font-family: 'Droid Serif', serif;
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-content: center;
+align-items: center;
+align-self: center;
+}
+
+div.main{
+width: 320px;
+float: right;
+padding: 10px 55px 40px;
+background-color: #2b2b63;
+border: 15px solid white;
+box-shadow: 0 0 10px;
+border-radius: 2px;
+font-size: 13px;
+align-self: end;
+
+}
+
+.regTextBoxes {
+width: 97.7%;
+height: 34px;
+padding-left: 5px;
+margin-bottom: 20px;
+margin-top: 8px;
+box-shadow: 0 0 5px #ff9900;
+border: 2px solid #ffcc80;
+color: #4f4f4f;
+font-size: 16px;
+}
+
+label{
+color: #b3b3b3;
+text-shadow: 0 1px 0 #b3b3b3;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 1px;
+
+}
+
+#register {
+font-size: 20px;
+margin-top: 15px;
+background: linear-gradient(#ffcc80 5%, #ff9900 100%);
+padding: 7px 35px;
+font-weight: bold;
+border-radius: 10px;
+width: 100%;
+
+}
+
+#register:hover{
+    background: linear-gradient(#ff9900 5%, #ffcc80 100%);
+    }
+
+
+
+/***************************************************************************************/
+/*                                    WALL                                             */
+/***************************************************************************************/
+
+body,html{
+    overflow:hidden
+  }
+
+#wall{
+    display: flex;
+    margin: 10px 20%;
+    flex-direction: column; 
+    overflow: auto;
+    max-height: 86%;
+
+}
+
+#wall::-webkit-scrollbar { width: 0 !important }
+
+#statusField{
+    display: flex;
+    background-color: aliceblue;        
+}
+
+.postTextArea{
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    padding-bottom: 5px;
+    border-bottom: ridge;
+    flex-direction: column;
+
+}
+
+.userStatusTA{
+    width: 100%;
+    height: 100%;
+}
+
+textarea{
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: white;
+    outline: none;
+
+}
+
+.userStatusTA.postContent {
+    
+    border: none;
+    width: 97.5%;
+    border-radius: 10px;
+    background-color: white;
+    word-wrap: break-word;
+    text-align: start;
+    padding: 5px 10px;
+    margin-right: 63px;
+
+}
+
+.statusFieldHead{
+    display: flex;
+    justify-self: self-start;
+    align-self: flex-start;
+    margin: 10px 55px;
+    border-bottom-style: ridge;
+}
+
+.postContainer{
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    margin: 2%;
+    box-shadow: 10px 10px 10px #2b2b63;
+    border-radius: 90px;
+}
+
+.postConrollers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px 5px 40px;
+}
+
+#privacyTgl{
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.button.addPicBtn{
+    background: linear-gradient(#80a9ff 5%, #cc00ff 100%);
+    color: white;
+}
+
+.button.addPicBtn:hover{
+    background: linear-gradient(#cc00ff 5%, #80a9ff 100%);
+}
+
+.singlePost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    margin: 2%;
+    box-shadow: 10px 10px 10px #2b2b63;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.likeBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 25px;
+    width: 80px;
+    background-color: #7b80ff;
+    color: white;
+    border-radius: 10px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.likeImg{
+    width: 24px;
+    height: 24px;
+}
+
+.likeDiv{
+    height: 15px;
+    width: 40px;
+    background-color: #7b80ff;
+    color: white;
+    border-radius: 10px;
+    line-height: 1.4;
+}
+
+.commentsArea{
+    background-color: white;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 10px;
+    min-height: 100px;
+    margin: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userComment {
+    /* border-bottom-width: 2px; */
+    border-style: ridge;
+    border-radius: 10px;
+    width: 97%;
+    align-self: center;
+    margin: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.userComment textarea{
+    
+    align-self: center;
+}
+
+.userComment .likeDiv{
+    align-self: center;
+    font-size: 13px;
+    height: 18px;
+    width: 63px;
+
+}
+
+.commentBtn{
+    cursor: pointer;
+}
+
+.singleComment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+
+.commenterName{
+    align-self: flex-start;
+    padding: 11px 0px 5px 5px;
+    font-weight: bold;
+}
+
+.commentContent{
+    padding: 0px 0px 10px 50px;
+    align-self: flex-start;
+}
+
+#flappyBird{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 270px;
+    margin: 5px;
+    border-style: inset;
+    border-radius: 10px;
+    float: right;
+}
+
+#friendSearch{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 270px;
+    margin: 5px;
+    border-style: inset;
+    border-radius: 10px;
+    float: left;
+}
+
+#searchBar{
+    width: 100%;
+    height: 30px;
+    border-bottom-width: 2px;
+    border-bottom-style: ridge;
+}
+
+.userName{
+    display: flex;
+    justify-self: flex-start;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    border-bottom-style: inset;
+    border-bottom-width: 2px;
+    cursor: pointer;
+
+}
+
+.userName:hover {
+    color: #7b80ff;
+}
+
+.postHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.privacyCheckBox{
+    display: flex;
+    justify-self: center;
+    margin: 10px 44px;
+}
+
+.nolLabel {
+    font-size: 10px;
+}
+
+.addImageFrom{
+    display: flex;
+    flex-direction: column;
+}
+
+.postImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 5px 0px 5px 0px;
+    flex-wrap: wrap;
+
+}
+
+
+
+.postImage img{
+    display: flex;
+    justify-self: flex-start;
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+    max-width: 100px;
+    max-height: 65px;
+    cursor: pointer;
+
+}
+
+.postImage img:hover {
+    transform: scale(1.1); 
+}
+
+
+.postComments{
+    max-height: 210px;
+    overflow-y: auto;
+}
+
+.postInsertImage{
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0px;
+    max-width: 100px;
+    max-height: 65px;
+}
+
+#postImagePreview{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 5px 0px 5px 0px;
+    flex-wrap: wrap;
+}
+
+#postImagePreview img{
+    display: flex;
+    justify-self: flex-start;
+    margin: 0px;
+    border-radius: 10px;
+    max-width: 100px;
+    height: fit-content;
+    max-height: 65px;
+    cursor: pointer;
+}
+
+#flappyBirdHeader{
+    padding-bottom: 25px;
+    padding-top: 10px;
+    width: 100%;
+    min-height: 135px;
+    border-bottom-width: 2px;
+    border-bottom-style: ridge;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#flappyBirdHeader button{
+    width: 150px;
+    margin: auto;
+}
+
+.flappyBirdNotification{
+    display: flex;
+    background-color: #ff6262;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.flappyBirdNotification p{
+    margin: 10px 0px 10px 0px;
+}
+
+#cleanNotificationsBtn {
+    margin: 0px;
+    color: blue;
+    cursor: pointer;
+}
+
+#cleanNotificationsBtn:hover {
+    color: slateblue;
+    text-decoration: underline;
+
+}
+
+.profileImage{
+    width: 40px;
+    display: flex;
+    height: 40px;
+}
+
+.profileImage img {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+
+}
+
+.profile .statusFieldHead{
+    margin-left: 5px;
+}
+/* .postImagePreview:hover > .closablePostImage:hover{
+    transform: scale(2.0); 
+    opacity: 0.2;
+}
+
+.closablePostImage:hover {
+    transform: scale(1.0); 
+    opacity: 0.2;
+}
+
+.closablePostImage:hover + .icon {
+    opacity: 1;
+    
+} */
+
+
+
+/*              comments scroll bar                */
+/***************************************************/
+
+/* width */
+.postComments::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .postComments::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .postComments::-webkit-scrollbar-thumb {
+    background: #7b80ff; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .postComments::-webkit-scrollbar-thumb:hover {
+    background: black; 
+  }
+
+
+/*                  POST IMAGE - X ICON         */
+/***********************************************/
+
+  .postImageOverlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 65px;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: red;
+  }
+ 
+  
+  .icon {
+    color: white;
+    font-size: 30px;
+    transform: translate(0%, -155%);
+    text-align: center;
+    opacity: 0;
+  }
+
+  .postInsertImage:hover > img{
+    transform: scale(1.0); 
+    opacity: 0.2;
+}
+    
+.postInsertImage:hover > .icon{
+    opacity: 1;
+}
+
+
+
+  .postInsertImage:hover > .icon:hover {
+    color: red;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  
+  
+  
+/******                  TOGGLE                   ******/
+/*copied from: https://codepen.io/mallendeo/pen/eLIiG  */
+/*******************************************************/
+
+.tgl {
+    display: none;
+  }
+  .tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+    box-sizing: border-box;
+  }
+  .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+    background: none;
+  }
+  .tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+    background: none;
+  }
+  .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+  }
+  .tgl + .tgl-btn:after {
+    left: 0;
+  }
+  .tgl + .tgl-btn:before {
+    display: none;
+  }
+  .tgl:checked + .tgl-btn:after {
+    left: 50%;
+  }
+  
+
+.tgl-flip + .tgl-btn {
+    padding: 2px;
+    transition: all .2s ease;
+    font-family: sans-serif;
+    -webkit-perspective: 100px;
+            perspective: 100px;
+  }
+  .tgl-flip + .tgl-btn:after, .tgl-flip + .tgl-btn:before {
+    display: inline-block;
+    transition: all .4s ease;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    line-height: 2em;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 4px;
+  }
+  .tgl-flip + .tgl-btn:after {
+    content: attr(data-tg-on);
+    background: #02C66F;
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  .tgl-flip + .tgl-btn:before {
+    background: #FF3A19;
+    content: attr(data-tg-off);
+  }
+  .tgl-flip + .tgl-btn:active:before {
+    -webkit-transform: rotateY(-20deg);
+            transform: rotateY(-20deg);
+  }
+  .tgl-flip:checked + .tgl-btn:before {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .tgl-flip:checked + .tgl-btn:after {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    left: 0;
+    background: #7FC6A6;
+  }
+  .tgl-flip:checked + .tgl-btn:active:after {
+    -webkit-transform: rotateY(20deg);
+            transform: rotateY(20deg);
+  }
+
+
+
+
+
+/******                  image thumb              ******/
+/*******************************************************/
+
+  
+	
+	.modal {
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		padding-top: 100px;
+		left: 0;
+		top: 0;
+		width: 100%; 
+		height: 100%; 
+		overflow: auto; 
+		background-color: rgb(0,0,0); 
+		background-color: rgba(0,0,0,0.9); 
+	}
+	
+	.modal-content {
+		margin: auto;
+		display: block;
+		width: 80%;
+        max-width: 700px;
+    }
+    
+ 
+	
+	#caption {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+		text-align: center;
+		color: #ccc;
+		padding: 10px 0;
+		height: 150px;
+	}
+	
+	.modal-content, #caption {  
+		-webkit-animation-name: zoom;
+		-webkit-animation-duration: 0.6s;
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	}
+	
+	@-webkit-keyframes zoom {
+		from {-webkit-transform:scale(0)} 
+		to {-webkit-transform:scale(1)}
+	}
+	
+	@keyframes zoom {
+		from {transform:scale(0)} 
+		to {transform:scale(1)}
+	}
+	
+	.close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+	
+	.close:hover,
+	.close:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	@media only screen and (max-width: 700px){
+		.modal-content {
+		width: 100%;
+		}
+	}
